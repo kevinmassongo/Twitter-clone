@@ -190,7 +190,7 @@ body{
     gap: 20px;
 }
 
-/* Sidebar */
+/* Left Sidebar */
 
 .left-sidebar{
     position: relative;
@@ -263,7 +263,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     width: 100%;
 }
 
@@ -274,5 +274,15 @@ body{
 
 .contentNoun .contentOne p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
+
+.contentNoun .contentOne p:last-child{
+    opacity: 0.5;
+}
+
+/* Right Sidebar */
+
+/* .setting{
+    font-size: 0rem;
+} */

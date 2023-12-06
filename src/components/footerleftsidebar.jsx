@@ -1,6 +1,6 @@
 import ProfilPicture from "./profilPicture";
 
-const FooterSidebar = () => {
+const FooterLeftSidebar = () => {
     const Noun = () => {
         return (
             <div className="contentNoun">
@@ -30,4 +30,4 @@ const FooterSidebar = () => {
     )
 }
 
-export default FooterSidebar;
+export default FooterLeftSidebar;

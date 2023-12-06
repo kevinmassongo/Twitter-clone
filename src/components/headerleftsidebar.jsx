@@ -1,4 +1,4 @@
-const HeaderSidebar = () => {
+const HeaderLeftSidebar = () => {
 
     return (
         <>
@@ -9,4 +9,4 @@ const HeaderSidebar = () => {
     )
 }
 
-export default HeaderSidebar 
+export default HeaderLeftSidebar 

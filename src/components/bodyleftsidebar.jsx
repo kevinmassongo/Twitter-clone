@@ -1,6 +1,6 @@
 import Button from "./bouton";
 
-const BodySidebar = () => {
+const BodyLeftSidebar = () => {
     return (
         <div className="sidebar">
             <div className="home-fill">
@@ -45,4 +45,4 @@ const BodySidebar = () => {
     )
 }
 
-export default BodySidebar;
+export default BodyLeftSidebar;
