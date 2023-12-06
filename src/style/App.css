@@ -193,3 +193,49 @@ body{
     justify-content: center;
     gap: 20px;
 }
+
+/* Sidebar */
+
+.sidebar{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.headersidebar, .home-fill, .explore, .message, .bookmarks, .lists, .profil, .more{
+    display: flex;
+    font-size: 1.3rem;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.notifications{
+    display: flex;
+    gap: 23px;
+    margin-top: 30px;
+}
+
+.groups{
+    position: relative;
+
+}
+
+.notification{
+    position: absolute;
+    height: 12px;
+    margin-left: -10px;
+}
+
+.buttonMore{
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: #1D9BF0;
+    color: white;
+}

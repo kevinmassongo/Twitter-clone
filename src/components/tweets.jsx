@@ -50,16 +50,12 @@ function TweetAction ({icon, value}) {
 }
 function TweetActions (){
  return(
-       <div className="tweet-actions">
-            <TweetAction icon="src/icons/Reply.png"
-              value="17" />
-            <TweetAction icon="src/icons/Retweet.png"
-             value="19" />
-            <TweetAction icon="src/icons/React.png"
-              value="19"  />
-            <TweetAction icon="src/icons/Share.png"
-            value="19"  />
-         </div>
+        <div className="tweet-actions">
+          <TweetAction icon="src/icons/Reply.png"/>
+          <TweetAction icon="src/icons/Retweet.png"/>
+          <TweetAction icon="src/icons/React.png"/>
+          <TweetAction icon="src/icons/Share.png"/>
+        </div>
      )
 }
 function TweetContent(){
