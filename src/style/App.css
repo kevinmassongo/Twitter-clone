@@ -96,10 +96,6 @@ body{
 .button {
     text-transform: capitalize;
     padding: .7rem 1.5rem;
-    border: none;
-    border-radius: 50px;
-    background-color: #1D9BF0;
-    color: white;
     font-size: 1rem;
 }
 .tweet{
@@ -196,6 +192,11 @@ body{
 
 /* Sidebar */
 
+.left-sidebar{
+    position: relative;
+    left: 0;
+}
+
 .sidebar{
     font-family: 'Inter', sans-serif;
     font-size: 1.3rem;
@@ -229,7 +230,7 @@ body{
 }
 
 .buttonMore{
-    width: 100%;
+    /* width: 100%;
     padding: 10px;
     border-radius: 50px;
     border: none;
@@ -237,5 +238,41 @@ body{
     font-size: 1.3rem;
     font-weight: 500;
     background-color: #1D9BF0;
+    color: white; */
+    margin-top: 30px;
+}
+
+.buttons{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; */
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: #1D9BF0;
     color: white;
+}
+
+.contentFooter{
+    position: relative;
+    top: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.contentNoun{
+    display: flex;
+    justify-content: center;
+}
+
+.contentNoun .contentOne p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
 }

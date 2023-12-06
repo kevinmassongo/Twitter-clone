@@ -1,8 +1,10 @@
 import React from 'react';
+import Button from './bouton';
+import ProfilPicture from './profilPicture';
  function TweetEditor(){
   return(
     <div className="tweet-editor">
-        <img src="src/images/profile-photo.png" className="avatar" alt="avatar"/>
+        <ProfilPicture></ProfilPicture>
         <div className="tweet-editor-form">
           <input className="tweet-editor-input" placeholder="what's happening?" />
           <div className="tweet-editor-buttons">
@@ -13,7 +15,9 @@ import React from 'react';
               <img src="src/icons/Group.png"  />
               <img src="src/icons/Schedule.png"  />
             </div>
-            <button className="button">Tweet</button>
+            <div className="button">
+            <Button>Tweet</Button>
+            </div>
          </div>
         </div>
     </div>

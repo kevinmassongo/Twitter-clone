@@ -1,3 +1,5 @@
+import Button from "./bouton";
+
 const BodySidebar = () => {
     return (
         <div className="sidebar">
@@ -36,7 +38,9 @@ const BodySidebar = () => {
                 <img src="src/icons/More.png" alt="more" />
                 <h4>More</h4>
             </div>
-            <button className="buttonMore">More</button>
+            <div className="buttonMore">
+                <Button>Tweet</Button>
+            </div>
         </div>
     )
 }
