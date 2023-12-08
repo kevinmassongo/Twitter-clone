@@ -2,18 +2,14 @@ import React from 'react';
 import Header from '../components/header.jsx';
 import TweetEditor from '../components/tweet-editor';
 import Tweets from '../components/tweets.jsx';
-import HeaderLeftSidebar from '../components/headerleftsidebar.jsx';
-import BodyLeftSidebar from '../components/bodyleftsidebar.jsx';
-import FooterLeftSidebar from '../components/footerleftsidebar.jsx';
-import HeaderRightSidebar from '../components/headerrightsidebar.jsx';
+import HeaderRightSidebar from '../components/trends.jsx';
+import Sidebar from '../components/sidebar.jsx';
 
 function Home() {
   return (
     <>
       <main className='left-sidebar'>
-        <HeaderLeftSidebar />
-        <BodyLeftSidebar />
-        <FooterLeftSidebar />
+        <Sidebar />
       </main>
       <main className="timeline">
         <Header />
