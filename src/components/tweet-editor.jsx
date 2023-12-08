@@ -4,7 +4,7 @@ import ProfilPicture from './profilPicture';
  function TweetEditor(){
   return(
     <div className="tweet-editor">
-        <ProfilPicture></ProfilPicture>
+        <ProfilPicture src="./src/images/profile-photo.png"></ProfilPicture>
         <div className="tweet-editor-form">
           <input className="tweet-editor-input" placeholder="what's happening?" />
           <div className="tweet-editor-buttons">

@@ -1,6 +1,6 @@
-const ProfilPicture = () =>{
+const ProfilPicture = ({src,style}) =>{
     return (
-        <img src="./src/images/profile-photo.png" className="avatar" alt="profile-photo" />
+        <img src={src} className={style} alt="profile-photo" />
     )
 }
 

@@ -1,4 +1,5 @@
 import Button from "./bouton";
+import Paragraph from "./paragraph";
 import ProfilPicture from "./profilPicture";
 
 const Sidebar = () => {
@@ -7,8 +8,9 @@ const Sidebar = () => {
             return (
                 <div className="contentNoun">
                     <div className="contentOne">
-                        <p>Bradley Ortiz</p>
-                        <p>@bradley</p>
+                        <Paragraph>Bradley Ortiz</Paragraph>
+                        <Paragraph>@bradley</Paragraph>
+
                     </div>
                     <div className="contentTwo">
                         <img src="./src/icons/private.png" alt="Private" />
@@ -25,7 +27,7 @@ const Sidebar = () => {
         }
         return (
             <div className="contentFooter">
-                <ProfilPicture/>
+                <ProfilPicture style="avatar2" src="./src/images/profile-photo.png"/>
                 <Noun/>
                 <IconMore/>
             </div>
