@@ -5,7 +5,7 @@ import HeaderSidebar from "./headersidebar";
 const Sidebar = () => {    
     return (
             <>
-            <div className="n">
+            <div className="contentSidebar">
                 <HeaderSidebar/>
                 <BodySidebar/>
             </div>
