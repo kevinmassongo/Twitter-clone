@@ -42,18 +42,24 @@ const Trends = () => {
                     </div>
                     <ShowMore />
                 </div>
-                <div className="twitter-footer">
-                    Terms of Service Privacy Police Cookie Policy Imprint Ads Info More... @2021 Twitter, Inc.
-                </div>
-                
             </>
         )
         
     }
+    const FooterTrends = () => {
+        return (
+                <div className="twitter-footer">
+                    Terms of Service Privacy Police Cookie Policy Imprint Ads Info More... @2021 Twitter, Inc.
+                </div>  
+        )
+    }
     return (
         <>
+            <div className="es">
             <HeaderTrends />
             <BodyTrends />
+            <FooterTrends />
+            </div>
         </>
         )
 }

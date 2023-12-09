@@ -1,6 +1,6 @@
 import Paragraph from "./paragraph";
 import ProfilPicture from "./profilPicture";
-const PartenaireList = ({src, alt}) => {
+const PartenaireList = () => {
     const FirstPartenaire = () => {
         return (
             <div className="partenaireStyle">
