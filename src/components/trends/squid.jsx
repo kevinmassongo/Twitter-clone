@@ -1,4 +1,4 @@
-import Paragraph from "./paragraph";
+import Paragraph from "../paragraph";
 
 const Squid = () => {
     return (

@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../components/header.jsx';
-import TweetEditor from '../components/tweet-editor';
-import Tweets from '../components/tweets.jsx';
+import Header from '../components/timeline/header.jsx';
+import TweetEditor from '../components/timeline/tweet-editor.jsx';
+import Tweets from '../components/timeline/tweets.jsx';
 import Sidebar from '../components/sidebar/sidebar.jsx';
-import Trends from '../components/trends.jsx';
+import Trends from '../components/trends/trends.jsx';
 
 function Home() {
   return (

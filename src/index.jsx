@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "./style/App.css";
 import "./style/reset.css";
-
 import { createBrowserRouter , RouterProvider} from 'react-router-dom';
-import Layout from './components/layout';
+import Layout from './components/layout/layout';
 import Home from './pages/home';
 import Explore from './pages/explore';
 import Notifications from './pages/notifications';

@@ -1,5 +1,5 @@
-import Paragraph from "./paragraph";
-import ProfilPicture from "./profilPicture";
+import Paragraph from "../paragraph";
+import ProfilPicture from "../profilPicture";
 const PartenaireList = () => {
     const FirstPartenaire = () => {
         return (

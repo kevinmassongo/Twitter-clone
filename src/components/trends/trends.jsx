@@ -1,7 +1,7 @@
-import Paragraph from "./paragraph"
+import Paragraph from "../paragraph"
 import PartenaireList from "./partenairelist"
-import Setting from "./setting"
-import ShowMore from "./showmore"
+import Setting from "../setting"
+import ShowMore from "../showmore"
 import Squid from "./squid"
 
 const Trends = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './bouton';
-import ProfilPicture from './profilPicture';
+import Button from '../bouton';
+import ProfilPicture from '../profilPicture';
  function TweetEditor(){
   return(
     <div className="tweet-editor">
