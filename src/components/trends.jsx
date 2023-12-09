@@ -1,6 +1,5 @@
 import Paragraph from "./paragraph"
 import PartenaireList from "./partenairelist"
-import ProfilPicture from "./profilPicture"
 import Setting from "./setting"
 import ShowMore from "./showmore"
 import Squid from "./squid"
@@ -55,10 +54,10 @@ const Trends = () => {
     }
     return (
         <>
-            <div className="es">
-            <HeaderTrends />
-            <BodyTrends />
-            <FooterTrends />
+            <div className="trendsDesign">
+                <HeaderTrends />
+                <BodyTrends />
+                <FooterTrends />
             </div>
         </>
         )

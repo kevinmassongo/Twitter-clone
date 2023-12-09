@@ -2,8 +2,8 @@ import React from 'react';
 import Header from '../components/header.jsx';
 import TweetEditor from '../components/tweet-editor';
 import Tweets from '../components/tweets.jsx';
-import HeaderRightSidebar from '../components/trends.jsx';
-import Sidebar from '../components/sidebar.jsx';
+import Sidebar from '../components/sidebar/sidebar.jsx';
+import Trends from '../components/trends.jsx';
 
 function Home() {
   return (
@@ -17,7 +17,7 @@ function Home() {
         <Tweets/>
       </main>
       <main className="right-sidebar">
-        <HeaderRightSidebar />
+        <Trends />
       </main>
     </>
   );
