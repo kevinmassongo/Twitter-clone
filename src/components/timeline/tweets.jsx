@@ -1,4 +1,6 @@
 import React from 'react';
+import Data from './data';
+import Post from './post';
 function TweetAvatar({image}){
   return(
         <div className="tweet-avatar">
@@ -89,28 +91,20 @@ function TweetAll(){
           </div>
   )
 }
-function TweetEnd(){
-  return(
-      <div className="tweet">
-        <TweetAvatar image="src/icons/image 1.png" />
-        <div className="tweet-body">
-            <TweetTitle text="Twitter" image="src/icons/Verified.png" span="@twitter                  2h"/>
-            <TweetText text='BIG NEWS lol jk still Twitter' />
-          <div className="tweet-content">
-              <TweetActions />
-          </div>
-        </div>
-      </div>
-  )
-}
+
 export default function Tweets(){
   return(
           <div className="tweets">
             <Tweet/>
             <TweetAll/>
-            <TweetEnd />
-            <TweetEnd />
-            <TweetEnd />
+              {
+              Data.map((post) => {
+                return <div className="tweet">
+                        <Post post={post} key={post.id}></Post>
+                      </div>
+              })
+              }
+       
           </div>
       )
 }
