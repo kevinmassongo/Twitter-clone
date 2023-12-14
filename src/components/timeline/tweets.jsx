@@ -1,13 +1,10 @@
 import React from 'react';
 import Data from './data';
 import Post from './post';
-function TweetAvatar({image}){
-  return(
-        <div className="tweet-avatar">
-          <img src={image} alt=""/>
-        </div>
-  )
-}
+import TweetAvatar from './tweetAvatar';
+import TweetActions from './tweetActions';
+import TweetAction from './tweetAction';
+
 function TweetTitle({text, image, span}){
   return (
       <div className="tweet-title">
@@ -42,24 +39,8 @@ function TweetBody (){
         </div>
       )
 }
-function TweetAction ({icon, value}) {
-  return  (
-            <div className="tweet-action">
-              <img src={icon}  alt="" />
-              <span>{value}</span>
-            </div>
-  )
-}
-function TweetActions (){
- return(
-        <div className="tweet-actions">
-          <TweetAction icon="src/icons/Reply.png"/>
-          <TweetAction icon="src/icons/Retweet.png"/>
-          <TweetAction icon="src/icons/React.png"/>
-          <TweetAction icon="src/icons/Share.png"/>
-        </div>
-     )
-}
+
+
 function TweetContent(){
   return (
           <div className="tweet-content">
