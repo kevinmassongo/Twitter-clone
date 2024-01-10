@@ -13,7 +13,7 @@ const PartenaireList = () => {
                     <Paragraph>@nytimes</Paragraph>
                 </div>
                 <div className="contentTwo">
-                    <img src="./src/icons/verified.png" alt="Verified" />
+                    <img src="./src/icons/Verified.png" alt="Verified" />
                 </div>
             </div>
             <div>
@@ -34,7 +34,7 @@ const PartenaireList = () => {
                     <Paragraph>@CNN</Paragraph>
                 </div>
                 <div className="contentTwo">
-                    <img src="./src/icons/verified.png" alt="Verified" />
+                    <img src="./src/icons/Verified.png" alt="Verified" />
                 </div>
             </div>
             <div>
@@ -56,7 +56,7 @@ const PartenaireList = () => {
                     <Paragraph>@Twitter</Paragraph>
                 </div>
                 <div className="contentTwo">
-                    <img src="./src/icons/verified.png" alt="Verified" />
+                    <img src="./src/icons/Verified.png" alt="Verified" />
                 </div>
             </div>
             <div>

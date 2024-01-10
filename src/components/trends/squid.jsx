@@ -10,7 +10,7 @@ const Squid = () => {
                         <Paragraph style="squid">2,066 Tweets</Paragraph>
                     </div>
                     <div className="quidContentOnePart">
-                        <img src="./src/icons/more-2.png" alt="More" />
+                        <img src="./src/icons/More-2.png" alt="More" />
                     </div>
                 </div>
             </>
