@@ -4,6 +4,7 @@ import Setting from "../setting"
 import ShowMore from "../showmore"
 import Squid from "./squid"
 
+
 const Trends = () => {
     const HeaderTrends = () => {
         return (
