@@ -11,7 +11,7 @@ const FooterSidebar = () => {
 
                 </div>
                 <div className="contentTwo">
-                    <img src="./src/icons/private.png" alt="Private" />
+                    <img src="src/icons/Private.png" alt="Private" />
                 </div>
             </div>
         )
@@ -19,7 +19,7 @@ const FooterSidebar = () => {
     const IconMore = () => {
         return (
             <div>
-                <img src="./src/icons/More-2.png" alt="More-2" />
+                <img src="src/icons/More2.png" alt="More-2" />
             </div>
         )
     }
