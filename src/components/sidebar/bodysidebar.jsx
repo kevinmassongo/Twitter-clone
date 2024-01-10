@@ -26,13 +26,13 @@ const BodySidebar = () => {
                 </li>
             </div>
             <div className="message">
-                <img src="src/icons/Messages.png" alt="Message" />
+                <img src="src/icons/messages.png" alt="Message" />
                 <li>
                     <NavLink to="/messages" className="navlink">Messages</NavLink>
                 </li>
             </div>
             <div className="bookmarks">
-                <img src="src/icons/Bookmarks.png" alt="Bookmarks" />
+                <img src="src/icons/bookmarks.png" alt="Bookmarks" />
                 <li>
                     <NavLink to="/bookmarks" className="navlink">Bookmarks</NavLink>
                 </li>
