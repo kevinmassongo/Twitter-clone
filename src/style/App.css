@@ -413,14 +413,14 @@ body{
     text-align: center;
 }
 
-.trendsDesign{
+/* .trendsDesign{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 250px;
     margin-right: 15px;
-}
+} */
 
 .contentSidebar{
     position: relative;
