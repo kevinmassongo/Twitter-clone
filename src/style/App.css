@@ -228,8 +228,9 @@ body{
 
 .notification{
     position: absolute;
-    height: 12px;
-    margin-left: -10px;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: -25px;
 }
 
 .buttonMore{
