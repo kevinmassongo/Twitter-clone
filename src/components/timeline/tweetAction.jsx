@@ -1,8 +1,7 @@
-const TweetAction = ({icon, value}) => {
+const TweetAction = ({icon, style}) => {
     return  (
-              <div className="tweet-action">
-                <img src={icon}  alt="" />
-                <span>{value}</span>
+              <div>
+                <img src={icon}  alt="" className={style}/>
               </div>
     )
   }

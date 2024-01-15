@@ -17,11 +17,11 @@ const Post = ({ post }) => {
                 <div className="tweet-content">
                     <div className="tweet-actions">
                         <div className="tweet-action">
-                            <img src={post.iconOne} alt="" />
+                            <img src={post.iconOne} alt=""/>
                             <span></span>
                         </div>
                         <div className="tweet-action">
-                            <img src={post.iconTwo} alt="" />
+                            <img src={post.iconTwo} alt=""/>
                             <span></span>
                         </div>
                         <div className="tweet-action">
