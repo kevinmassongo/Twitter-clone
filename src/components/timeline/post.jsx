@@ -15,7 +15,7 @@ const Post = ({ post }) => {
                     {post.paragraph}
                 </div>
                 <div className="tweet-content">
-                    <div className="tweet-actions">
+                    <div className="tweet-actions-post">
                         <div className="tweet-action">
                             <img src={post.iconOne} alt=""/>
                             <span></span>
