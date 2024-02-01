@@ -193,6 +193,79 @@ body{
     gap: 20px;
 }
 
+/* Tweet Action */
+
+.tweet-actions{
+    display: flex;
+    justify-content: space-between;
+    width: 106%;
+}
+
+.tweet-actions .container{
+    display: flex;
+    color: #2F3336;
+}
+
+/* tweet-actions firstContainer */
+
+.tweet-actions .firstContainer:hover{
+    color: rgb(30,144,255);;
+    fill: rgb(30,144,255);
+    filter: drop-shadow(0 0 100px rgb(30,144,255)) drop-shadow(0 0 20px rgb(30,144,255))
+    drop-shadow(0 0 100px rgb(30,144,255)); 
+    cursor: pointer;
+}
+
+.tweet-actions .firstContainer{
+    gap: 20px;
+    font-size: .9rem;
+    align-items: center;
+}
+
+/* tweet-actions secondContainer */
+
+.tweet-actions .secondContainer:hover{
+    color: rgb(60,179,113);
+    fill: rgb(60,179,113);
+    filter: drop-shadow(0 0 100px rgb(60,179,113)) drop-shadow(0 0 20px rgb(60,179,113))
+    drop-shadow(0 0 100px rgb(60,179,113)); 
+    cursor: pointer;
+}
+
+.tweet-actions .secondContainer{
+    gap: 20px;
+    font-size: .9rem;
+    align-items: center;
+}
+
+
+/* tweet-actions thirdContainer */
+
+.tweet-actions .thirdContainer:hover{
+    color: rgb(255,0,0);
+    fill: rgb(255,0,0);
+    filter: drop-shadow(0 0 100px rgb(255,0,0)) drop-shadow(0 0 20px rgb(255,0,0))
+    drop-shadow(0 0 100px rgb(255,0,0)); 
+    cursor: pointer;
+}
+
+.tweet-actions .thirdContainer{
+    gap: 20px;
+    font-size: .9rem;
+    align-items: center;
+}
+
+
+/* tweet-actions fourthContainer */
+
+.tweet-actions .fourthContainer:hover{
+    color: rgb(30,144,255);;
+    fill: rgb(30,144,255);
+    filter: drop-shadow(0 0 100px rgb(30,144,255)) drop-shadow(0 0 20px rgb(30,144,255))
+    drop-shadow(0 0 100px rgb(30,144,255)); 
+    cursor: pointer;
+}
+
 /* Sidebar */
 
 .left-sidebar{

@@ -73,15 +73,15 @@ function TweetAll(){
   )
 }
 
-export default function Tweets(){
+function Tweets(){
   return(
           <div className="tweets">
             <Tweet/>
             <TweetAll/>
               {
               Data.map((post) => {
-                return <div className="tweet">
-                        <Post post={post} key={post.id}></Post>
+                return <div className="tweet" key={post.id}>
+                        <Post post={post} ></Post>
                       </div>
               })
               }
@@ -89,3 +89,5 @@ export default function Tweets(){
           </div>
       )
 }
+
+export default Tweets
