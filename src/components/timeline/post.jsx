@@ -6,22 +6,26 @@ const Post = ({ post }) => {
             </div>
             <div className="tweet-body">
                 <div className="tweet-title">
-                    {post.title} <img src={post.imageTitle} alt="" /> 
+                    {post.title} <img src={post.imageTitle} alt="" />
                     <div className="tweet-title-details">
-                        <span>{post.spanTitle}</span> 
-                    </div> 
+                        <span>{post.spanTitle}</span>
+                    </div>
                 </div>
                 <div className="tweet-text">
                     {post.paragraph}
                 </div>
+                <div className="tweet-image">
+                    <img src={post.image} />
+
+                </div>
                 <div className="tweet-content">
                     <div className="tweet-actions-post">
                         <div className="tweet-action">
-                            <img src={post.iconOne} alt=""/>
+                            <img src={post.iconOne} alt="" />
                             <span></span>
                         </div>
                         <div className="tweet-action">
-                            <img src={post.iconTwo} alt=""/>
+                            <img src={post.iconTwo} alt="" />
                             <span></span>
                         </div>
                         <div className="tweet-action">
@@ -31,7 +35,7 @@ const Post = ({ post }) => {
                         <div className="tweet-action">
                             <img src={post.iconFour} alt="" />
                             <span></span>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
             </div>
