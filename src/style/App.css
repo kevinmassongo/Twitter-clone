@@ -127,7 +127,7 @@ body{
     align-items: flex-start;
     justify-content: flex-start;
     gap: 30px;
-    width: 100%;
+    /* width: 100%; */
 }
 .tweet-body{
     display: flex;
@@ -171,14 +171,7 @@ body{
     border-width: 1px;
 }
 
-.tweet-actions-post {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    color: grey;
-    font-size: 1rem;
-}
+
 
 .tweet-actions svg {
     width: 1rem;
@@ -198,7 +191,7 @@ body{
 .tweet-actions{
     display: flex;
     justify-content: space-between;
-    width: 106%;
+    width: 1%;
 }
 
 .tweet-actions .container{
@@ -503,20 +496,23 @@ body{
 
 /* Tweet Action */
 
-.tweet-actions{
+.tweet-actions-post {
     display: flex;
-    justify-content: space-between;
-    width: 106%;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    color: grey;
+    font-size: 1rem;
+    width: 100%;
 }
 
-.tweet-actions .container{
+.tweet-actions-post .container{
     display: flex;
     color: #2F3336;
 }
 
 /* tweet-actions firstContainer */
-
-.tweet-actions .firstContainer:hover{
+.firstContainer:hover{
     color: rgb(30,144,255);;
     fill: rgb(30,144,255);
     filter: drop-shadow(0 0 100px rgb(30,144,255)) drop-shadow(0 0 20px rgb(30,144,255))
@@ -524,15 +520,14 @@ body{
     cursor: pointer;
 }
 
-.tweet-actions .firstContainer{
+.firstContainer{
     gap: 20px;
     font-size: .9rem;
     align-items: center;
 }
 
 /* tweet-actions secondContainer */
-
-.tweet-actions .secondContainer:hover{
+.secondContainer:hover{
     color: rgb(60,179,113);
     fill: rgb(60,179,113);
     filter: drop-shadow(0 0 100px rgb(60,179,113)) drop-shadow(0 0 20px rgb(60,179,113))
@@ -540,7 +535,7 @@ body{
     cursor: pointer;
 }
 
-.tweet-actions .secondContainer{
+.secondContainer{
     gap: 20px;
     font-size: .9rem;
     align-items: center;
@@ -549,7 +544,7 @@ body{
 
 /* tweet-actions thirdContainer */
 
-.tweet-actions .thirdContainer:hover{
+.thirdContainer:hover{
     color: rgb(255,0,0);
     fill: rgb(255,0,0);
     filter: drop-shadow(0 0 100px rgb(255,0,0)) drop-shadow(0 0 20px rgb(255,0,0))
@@ -557,7 +552,7 @@ body{
     cursor: pointer;
 }
 
-.tweet-actions .thirdContainer{
+.thirdContainer{
     gap: 20px;
     font-size: .9rem;
     align-items: center;
@@ -566,12 +561,13 @@ body{
 
 /* tweet-actions fourthContainer */
 
-.tweet-actions .fourthContainer:hover{
+.fourthContainer:hover{
     color: rgb(30,144,255);;
     fill: rgb(30,144,255);
     filter: drop-shadow(0 0 100px rgb(30,144,255)) drop-shadow(0 0 20px rgb(30,144,255))
     drop-shadow(0 0 100px rgb(30,144,255)); 
     cursor: pointer;
 }
+
 
 

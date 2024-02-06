@@ -1,4 +1,5 @@
 const Post = ({ post }) => {
+    
     return (
         <>
             <div className="tweet-avatar">
@@ -16,24 +17,23 @@ const Post = ({ post }) => {
                 </div>
                 <div className="tweet-image">
                     <img src={post.image} />
-
                 </div>
                 <div className="tweet-content">
                     <div className="tweet-actions-post">
-                        <div className="tweet-action">
-                            <img src={post.iconOne} alt="" />
-                            <span></span>
+                        <div className="container firstContainer">
+                            <img src={post.iconOne} alt="" className="icon" />
+                            <span className="textIcon">{post.textIconOne}</span>
                         </div>
-                        <div className="tweet-action">
-                            <img src={post.iconTwo} alt="" />
-                            <span></span>
+                        <div className="container secondContainer">
+                            <img src={post.iconTwo} alt="" className="icon" />
+                            <span className="textIcon">{post.textIconTwo}</span>
                         </div>
-                        <div className="tweet-action">
-                            <img src={post.iconThree} alt="" />
-                            <span></span>
+                        <div className="container thirdContainer">
+                            <img src={post.iconThree} alt="" className="icon" />
+                            <span className="textIcon">{post.textIconThree}</span>
                         </div>
-                        <div className="tweet-action">
-                            <img src={post.iconFour} alt="" />
+                        <div className="container fourthContainer">
+                            <img src={post.iconFour} alt="" className="icon" />
                             <span></span>
                         </div>
                     </div>
