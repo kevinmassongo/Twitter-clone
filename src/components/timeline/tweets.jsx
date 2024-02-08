@@ -1,9 +1,11 @@
 import React from 'react';
-import Data from './data';
 import Post from './post';
+import { useContext } from 'react';
+import { UserContext } from '../context/UserContext';
 
 
 function Tweets(){
+  const Data = useContext(UserContext)
   return(
           <div className="tweets">
               {

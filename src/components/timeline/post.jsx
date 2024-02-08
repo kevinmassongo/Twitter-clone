@@ -13,7 +13,7 @@ const Post = ({ post }) => {
                     </div>
                 </div>
                 <div className="tweet-text">
-                    {post.paragraph}
+                    {post.text}
                 </div>
                 <div className="tweet-image">
                     <img src={post.image} />

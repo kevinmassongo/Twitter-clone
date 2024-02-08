@@ -1,12 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProfilPicture from '../profilPicture';
 function TweetEditor() {
-
-  //etat
-
-
-  //comportement
-
 
 
   //affichage
@@ -23,11 +17,9 @@ function TweetEditor() {
             <img src="src/icons/Group.png" />
             <img src="src/icons/Schedule.png" />
           </div>
-          <div className="button">
-            <form action="submit">
+            <form action="submit" >
               <button className="buttons">Tweet</button>
             </form>
-          </div>
         </div>
       </div>
     </div>

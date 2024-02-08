@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "./style/App.css";
 import "./style/reset.css";
-import { createBrowserRouter , RouterProvider} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/layout/layout';
 import Home from './pages/home';
 import Explore from './pages/explore';
@@ -12,6 +12,8 @@ import Bookmarks from './pages/bookmarks';
 import Profile from './pages/profile';
 import Lists from './pages/lists';
 import More from './pages/more';
+import { UserContext } from './components/context/UserContext';
+import Data from './data/initial-data.json'
 
 const router = createBrowserRouter([
   {
@@ -52,7 +54,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/more",
-        element: <More/>,
+        element: <More />,
       },
     ],
   },
@@ -60,7 +62,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <UserContext.Provider value={Data.tweets}>
+      <RouterProvider router={router} />
+    </UserContext.Provider>
   </React.StrictMode>,
 )
-  
