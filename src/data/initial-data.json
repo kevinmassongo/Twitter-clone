@@ -9,11 +9,11 @@
             "imageTitle": "./src/icons/Verified.png",
             "text": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
             "iconOne": "src/icons/Reply.svg",
-            "textIconOne": "7.3K",
+            "textIconOne": 762,
             "iconTwo": "src/icons/Retweet.svg",
-            "textIconTwo": "8.2K",
+            "textIconTwo": 8.2,
             "iconThree": "src/icons/React.svg",
-            "textIconThree": "71K",
+            "textIconThree": 71,
             "iconFour": "src/icons/Share.svg"
         },
         {
@@ -25,11 +25,11 @@
             "text": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
             "image": "src/images/tweet-image.png",
             "iconOne": "src/icons/Reply.svg",
-            "textIconOne": "7.3K",
+            "textIconOne": 730,
             "iconTwo": "src/icons/Retweet.svg",
-            "textIconTwo": "8.2K",
+            "textIconTwo": 8.2,
             "iconThree": "src/icons/React.svg",
-            "textIconThree": "71K",
+            "textIconThree": 71,
             "iconFour": "src/icons/Share.svg"
         },
         {
@@ -40,11 +40,11 @@
             "imageTitle": "./src/icons/Verified.png",
             "text": "BIG NEWS lol jk still Twitter",
             "iconOne": "src/icons/Reply.svg",
-            "textIconOne": "7.3K",
+            "textIconOne": 309,
             "iconTwo": "src/icons/Retweet.svg",
-            "textIconTwo": "8.2K",
+            "textIconTwo": 8.2,
             "iconThree": "src/icons/React.svg",
-            "textIconThree": "71K",
+            "textIconThree": 71,
             "iconFour": "src/icons/Share.svg"
         },
         {
@@ -55,11 +55,11 @@
             "imageTitle": "./src/icons/Verified.png",
             "text": "BIG NEWS lol jk still Twitter",
             "iconOne": "src/icons/Reply.svg",
-            "textIconOne": "7.3K",
+            "textIconOne": 568,
             "iconTwo": "src/icons/Retweet.svg",
-            "textIconTwo": "8.2K",
+            "textIconTwo": 8.2,
             "iconThree": "src/icons/React.svg",
-            "textIconThree": "71K",
+            "textIconThree": 71,
             "iconFour": "src/icons/Share.svg"
         },
         {
@@ -70,11 +70,11 @@
             "imageTitle": "./src/icons/Verified.png",
             "text": "BIG NEWS lol jk still Twitter",
             "iconOne": "src/icons/Reply.svg",
-            "textIconOne": "7.3K",
+            "textIconOne": 999,
             "iconTwo": "src/icons/Retweet.svg",
-            "textIconTwo": "8.2K",
+            "textIconTwo": 8.2,
             "iconThree": "src/icons/React.svg",
-            "textIconThree": "71K",
+            "textIconThree": 71,
             "iconFour": "src/icons/Share.svg"
         }
     ]

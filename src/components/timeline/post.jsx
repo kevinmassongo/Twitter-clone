@@ -1,5 +1,19 @@
+import { useContext, useState } from "react";
+import { UserContext } from "../context/UserContext";
+import LikeAndDislike from "./like&dislike";
+
 const Post = ({ post }) => {
-    
+
+    const [like, setLike] = useState(post.textIconOne),
+        [isLike, setIsLike] = useState(false)
+
+    const handleClick = () => {
+        setLike(like + (isLike ? -1 : 1))
+        setIsLike(!isLike)
+    }
+    console.log(like);
+
+
     return (
         <>
             <div className="tweet-avatar">
@@ -21,8 +35,8 @@ const Post = ({ post }) => {
                 <div className="tweet-content">
                     <div className="tweet-actions-post">
                         <div className="container firstContainer">
-                            <img src={post.iconOne} alt="" className="icon" />
-                            <span className="textIcon">{post.textIconOne}</span>
+                            <img src={post.iconOne} alt="" className="icon" onClick={handleClick} />
+                            <span className="textIcon">{like}</span>
                         </div>
                         <div className="container secondContainer">
                             <img src={post.iconTwo} alt="" className="icon" />
