@@ -1,15 +1,8 @@
-function LikeAndDislike({ post }) {
-    const [like, setLike] = useState(post.textIconOne),
-        [isLike, setIsLike] = useState(false)
+function LikeAndDislike({ like , post , handleClick }) {
 
-    const handleClick = () => {
-        setLike(like + (isLike ? -1 : 1))
-        setIsLike(!isLike)
-    }
-    console.log(like);
     return (
         <>
-            <img src={post.iconOne} alt="" className="icon" onClick={handleClick} />
+            <img src={post.FirstTweetIcon} alt="" className="icon" onClick={handleClick} />
             <span className="textIcon">{like}</span>
         </>
     )

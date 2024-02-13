@@ -4,15 +4,13 @@ import LikeAndDislike from "./like&dislike";
 
 const Post = ({ post }) => {
 
-    const [like, setLike] = useState(post.textIconOne),
+    const [like, setLike] = useState(post.TextOfTheFirstIcon),
         [isLike, setIsLike] = useState(false)
 
     const handleClick = () => {
         setLike(like + (isLike ? -1 : 1))
         setIsLike(!isLike)
     }
-    console.log(like);
-
 
     return (
         <>
@@ -21,13 +19,13 @@ const Post = ({ post }) => {
             </div>
             <div className="tweet-body">
                 <div className="tweet-title">
-                    {post.title} <img src={post.imageTitle} alt="" />
+                    {post.TweetTitle} <img src={post.TweetLogo} alt="" />
                     <div className="tweet-title-details">
-                        <span>{post.spanTitle}</span>
+                        <span>{post.TweetTitleText}</span>
                     </div>
                 </div>
                 <div className="tweet-text">
-                    {post.text}
+                    {post.TweetText}
                 </div>
                 <div className="tweet-image">
                     <img src={post.image} />
@@ -35,19 +33,20 @@ const Post = ({ post }) => {
                 <div className="tweet-content">
                     <div className="tweet-actions-post">
                         <div className="container firstContainer">
-                            <img src={post.iconOne} alt="" className="icon" onClick={handleClick} />
-                            <span className="textIcon">{like}</span>
+                            {/* <img src={post.FirstTweetIcon} alt="" className="icon" onClick={handleClick} />
+                            <span className="textIcon">{like}</span> */}
+                            <LikeAndDislike post={post} like={like} handleClick={handleClick}></LikeAndDislike>
                         </div>
                         <div className="container secondContainer">
-                            <img src={post.iconTwo} alt="" className="icon" />
-                            <span className="textIcon">{post.textIconTwo}</span>
+                            <img src={post.SecondTweetIcon} alt="" className="icon" />
+                            <span className="textIcon">{post.TextOfTheSecondIcon}</span>
                         </div>
                         <div className="container thirdContainer">
-                            <img src={post.iconThree} alt="" className="icon" />
-                            <span className="textIcon">{post.textIconThree}</span>
+                            <img src={post.ThirdTweetIcon} alt="" className="icon" />
+                            <span className="textIcon">{post.TextOfTheThirdIcon}</span>
                         </div>
                         <div className="container fourthContainer">
-                            <img src={post.iconFour} alt="" className="icon" />
+                            <img src={post.FourthTweetIcon} alt="" className="icon" />
                             <span></span>
                         </div>
                     </div>
