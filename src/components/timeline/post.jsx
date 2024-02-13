@@ -1,21 +1,13 @@
-import { useContext, useState } from "react";
-import { UserContext } from "../context/UserContext";
-import LikeAndDislike from "./like&dislike";
+import LikeAndDislike from "./LikeAndDislike/like&dislike";
+import CommentAndUncomment from "./LikeAndDislike/comment&uncomment";
+import PostAndDeposter from "./LikeAndDislike/post&deposter";
+import { Link } from "react-router-dom";
 
 const Post = ({ post }) => {
-
-    const [like, setLike] = useState(post.TextOfTheFirstIcon),
-        [isLike, setIsLike] = useState(false)
-
-    const handleClick = () => {
-        setLike(like + (isLike ? -1 : 1))
-        setIsLike(!isLike)
-    }
-
     return (
         <>
             <div className="tweet-avatar">
-                <img src={post.imageAvatar} />
+                <Link to={post.linkAvatar}><img src={post.imageAvatar}/></Link>
             </div>
             <div className="tweet-body">
                 <div className="tweet-title">
@@ -33,17 +25,13 @@ const Post = ({ post }) => {
                 <div className="tweet-content">
                     <div className="tweet-actions-post">
                         <div className="container firstContainer">
-                            {/* <img src={post.FirstTweetIcon} alt="" className="icon" onClick={handleClick} />
-                            <span className="textIcon">{like}</span> */}
-                            <LikeAndDislike post={post} like={like} handleClick={handleClick}></LikeAndDislike>
+                            <CommentAndUncomment post={post}/>
                         </div>
                         <div className="container secondContainer">
-                            <img src={post.SecondTweetIcon} alt="" className="icon" />
-                            <span className="textIcon">{post.TextOfTheSecondIcon}</span>
+                            <PostAndDeposter post={post}/>
                         </div>
                         <div className="container thirdContainer">
-                            <img src={post.ThirdTweetIcon} alt="" className="icon" />
-                            <span className="textIcon">{post.TextOfTheThirdIcon}</span>
+                            <LikeAndDislike post={post}/>
                         </div>
                         <div className="container fourthContainer">
                             <img src={post.FourthTweetIcon} alt="" className="icon" />
