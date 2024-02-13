@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import ProfilPicture from '../profilPicture';
+import { Link } from 'react-router-dom';
 function TweetEditor() {
 
 
   //affichage
   return (
     <div className="tweet-editor">
-      <ProfilPicture src="./src/images/profile-photo.png"></ProfilPicture>
+      <Link to="/profil"><ProfilPicture src="./src/images/profile-photo.png"></ProfilPicture></Link>
       <div className="tweet-editor-form">
         <input className="tweet-editor-input" placeholder="what's happening?"/>
         <div className="tweet-editor-buttons">

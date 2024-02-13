@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Paragraph from "../paragraph"
 import ProfilPicture from "../profilPicture"
 
@@ -25,7 +26,7 @@ const FooterSidebar = () => {
     }
     return (
         <div className="contentFooter">
-            <ProfilPicture style="avatar2" src="./src/images/profile-photo.png"/>
+            <Link to="/profil"><ProfilPicture style="avatar2" src="./src/images/profile-photo.png"/></Link>
             <Noun/>
             <IconMore/>
         </div>

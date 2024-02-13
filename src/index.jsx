@@ -9,7 +9,7 @@ import Explore from './pages/explore';
 import Notifications from './pages/notifications';
 import Messages from './pages/messages';
 import Bookmarks from './pages/bookmarks';
-import Profile from './pages/profile';
+import Profil from './pages/profil';
 import Lists from './pages/lists';
 import More from './pages/more';
 import { UserContext } from './components/context/UserContext';
@@ -49,8 +49,8 @@ const router = createBrowserRouter([
         element: <Lists />,
       },
       {
-        path: "/profile",
-        element: <Profile />,
+        path: "/profil",
+        element: <Profil />,
       },
       {
         path: "/more",
