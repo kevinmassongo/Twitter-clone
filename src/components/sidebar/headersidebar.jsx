@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const HeaderSidebar = () => {
     return (
         <>
             <div className="headersidebar">
-                <img src="./src/icons/Twitter.png" alt="" />
+                <Link to="/home"><img src="./src/icons/Twitter.png" alt="" /></Link>
             </div>
         </>
     )    

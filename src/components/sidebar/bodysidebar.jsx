@@ -56,7 +56,7 @@ const BodySidebar = () => {
                 </li>
             </div>
             <div className="buttonMore">
-                <Button>Tweet</Button>
+                <Button style="buttons">Tweet</Button>
             </div>
         </div>
     )
