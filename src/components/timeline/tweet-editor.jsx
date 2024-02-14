@@ -22,7 +22,7 @@ function TweetEditor() {
             <button className="buttons">Tweet</button>
           </form>
         </div>
-      </div>F
+      </div>
     </div>
   )
 }

@@ -6,21 +6,20 @@ function TweetEditorProfile() {
     return (
         <>
             <div className="tweet-editor-profile-container">
-                <div className="empty-container">
-
-                </div>
+                <div className="empty-container"></div>
                 <div className="container">
                     <div className="profile-picture">
                         <ProfilPicture src="./src/images/profile-photo.png"></ProfilPicture>
                         <div className="box">
-                            <Paragraph className="page-title">Bradley Ortiz</Paragraph>
+                            <Paragraph style="name">Bradley Ortiz</Paragraph>
                             <Paragraph>@bradley</Paragraph>
                         </div>
                     </div>
                     <div className="edit-profile">
-                        <Button style="button-edit">Edit profile</Button>
+                        <Button style="buttons">Edit profile</Button>
                     </div>
                 </div>
+                <Paragraph style="biographie">Je suis un concepteur de sites web avec une expérience depuis plus d'une année, mon expertise est de créer et de concevoir des sites web, frontend et back-end</Paragraph>
             </div>
         </>
     )

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Paragraph from "../paragraph";
 
 function HeaderProfil() {
@@ -5,10 +6,10 @@ function HeaderProfil() {
         <>
             <div className="header-profile">
                 <div className="arrow-left">
-                    <span>&#8592;</span>
+                    <Link to="/home"><span>&#8592;</span></Link>
                 </div>
                 <div className="container">
-                    <Paragraph className="page-title">Bradley Ortiz</Paragraph>
+                    <Paragraph style="name-profile">Bradley Ortiz</Paragraph>
                     <Paragraph>3 Posts</Paragraph>
                 </div>
             </div>
