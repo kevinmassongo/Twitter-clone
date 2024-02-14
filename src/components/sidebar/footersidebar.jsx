@@ -9,7 +9,6 @@ const FooterSidebar = () => {
                 <div className="contentOne">
                     <Paragraph>Bradley Ortiz</Paragraph>
                     <Paragraph>@bradley</Paragraph>
-
                 </div>
                 <div className="contentTwo">
                     <img src="src/icons/Private.png" alt="Private" />

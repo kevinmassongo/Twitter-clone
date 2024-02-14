@@ -569,5 +569,37 @@ body{
     cursor: pointer;
 }
 
+/* Profile */
 
+/* 1. Header */
 
+.timeline-profile {
+    flex: 0 0 800px;
+    font-family: 'Inter', sans-serif;
+    border-left: 1px solid #2F3336;
+    border-right: 1px solid #2F3336;
+    max-width: 800px;
+}
+
+.header-profile {
+    display: flex;
+    padding: .5rem 1.5rem;
+    border-bottom: 1px solid #2F3336;
+    gap: 40px;
+}
+
+.header-profile .container{
+    align-items: center;
+}
+
+.arrow-left{
+    font-size: 2rem;
+}
+
+/* 2. Tweet-edit-profile */
+
+.empty-container {
+    background-color:#6E767D;
+    width: 100%;
+    height: 250px;
+}

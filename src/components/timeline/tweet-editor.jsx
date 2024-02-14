@@ -9,7 +9,7 @@ function TweetEditor() {
     <div className="tweet-editor">
       <Link to="/profil"><ProfilPicture src="./src/images/profile-photo.png"></ProfilPicture></Link>
       <div className="tweet-editor-form">
-        <input className="tweet-editor-input" placeholder="what's happening?"/>
+        <input className="tweet-editor-input" placeholder="what's happening?" />
         <div className="tweet-editor-buttons">
           <div className="tweet-editor-actions">
             <img src="src/icons/Gif.png" />
@@ -18,11 +18,11 @@ function TweetEditor() {
             <img src="src/icons/Group.png" />
             <img src="src/icons/Schedule.png" />
           </div>
-            <form action="submit" >
-              <button className="buttons">Tweet</button>
-            </form>
+          <form action="submit" >
+            <button className="buttons">Tweet</button>
+          </form>
         </div>
-      </div>
+      </div>F
     </div>
   )
 }
