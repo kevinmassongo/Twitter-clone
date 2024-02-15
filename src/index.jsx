@@ -11,9 +11,8 @@ import Messages from './pages/messages';
 import Bookmarks from './pages/bookmarks';
 import Lists from './pages/lists';
 import More from './pages/more';
-import { UserContext } from './components/context/UserContext';
-import Data from './data/initial-data.json'
 import Profile from './pages/profile';
+import ProviderData from './provider/data-provider';
 
 const router = createBrowserRouter([
   {
@@ -62,8 +61,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UserContext.Provider value={Data.tweets}>
+    <ProviderData>
       <RouterProvider router={router} />
-    </UserContext.Provider>
+    </ProviderData>
   </React.StrictMode>,
 )
