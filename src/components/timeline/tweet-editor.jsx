@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import ProfilPicture from '../profilPicture';
 import { Link } from 'react-router-dom';
 import UserContext from '../context/UserContext';
@@ -8,7 +8,8 @@ function TweetEditor() {
   const handleChange = (e) => {
     setPost(e.target.value)
   }
-  const { tweets, SetTweet} = useContext(UserContext)
+  const { tweets, SetTweet } = useContext(UserContext)
+  
   const handleSubmit = (e) => {
     e.preventDefault()
     let addPost;
@@ -29,7 +30,9 @@ function TweetEditor() {
       FourthTweetIcon: "src/icons/Share.svg"
     }
     
-    SetTweet([addPost, ...tweets])
+    if(post.length != 0){
+      SetTweet([addPost, ...tweets])
+    }
     setPost("")
   }
 

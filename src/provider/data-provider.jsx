@@ -5,7 +5,6 @@ import Initialize from '../data/initial-data.json'
 function ProviderData ({children}) {
 
     const [tweetData, setTweetData] = useState(Initialize.tweets)
-    console.log(tweetData);
 
     const SetTweet = (addPost) => {
         setTweetData(addPost)
