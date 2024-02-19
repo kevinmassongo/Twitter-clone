@@ -39,7 +39,7 @@ function TweetEditor() {
   //affichage
   return (
     <div className="tweet-editor">
-      <Link to="/profil"><ProfilPicture src="./src/images/profile-photo.png"></ProfilPicture></Link>
+      <Link to="/profile"><ProfilPicture src="./src/images/profile-photo.png"></ProfilPicture></Link>
       <div className="tweet-editor-form">
         <input className="tweet-editor-input" placeholder="what's happening?" value={post} onChange={handleChange} />
         <div className="tweet-editor-buttons">
