@@ -4,6 +4,7 @@ import PostAndDeposter from "./LikeAndDislike/post&deposter";
 import { Link } from "react-router-dom";
 
 const Post = ({ post }) => {
+
     return (
         <>
             <div className="tweet-avatar">

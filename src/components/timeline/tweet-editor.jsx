@@ -2,25 +2,71 @@ import React, { useContext, useState } from 'react';
 import ProfilPicture from '../profilPicture';
 import { Link } from 'react-router-dom';
 import UserContext from '../context/UserContext';
+import { useForm } from 'react-hook-form';
 
 function TweetEditor() {
-  const [post, setPost] = useState("")
-  const handleChange = (e) => {
-    setPost(e.target.value)
-  }
+
+  //SANS REACT HOOK FORM
+
+  // const [post, setPost] = useState("")
+  // const handleChange = (e) => {
+  //   setPost(e.target.value)
+  // }
   const { tweets, SetTweet } = useContext(UserContext)
-  
-  const handleSubmit = (e) => {
-    e.preventDefault()
+
+  //////////////////////////////////
+
+  const [formData, setFormData] = useState({
+    TweetText: "",
+  })
+
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    formState: { errors },
+  } = useForm({ defaultValues: formData })
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   let addPost;
+  //   addPost = {
+  //     id : new Date().getTime(),
+  //     imageAvatar: "./src/images/profile-photo.png",
+  //     linkAvatar: "./src/images/profile-photo.png",
+  //     TweetTitle: "Bradley Ortiz",
+  //     TweetTitleText: "@bradley",
+  //     TweetLogo: "./src/icons/Verified.png",
+  //     TweetText: post,
+  //     FirstTweetIcon: "src/icons/Reply.svg",
+  //     TextOfTheFirstIcon: 0,
+  //     SecondTweetIcon: "src/icons/Retweet.svg",
+  //     TextOfTheSecondIcon: 0,
+  //     ThirdTweetIcon: "src/icons/React.svg",
+  //     TextOfTheThirdIcon: 0,
+  //     FourthTweetIcon: "src/icons/Share.svg"
+  //   }
+
+  //   if(post.length != 0){
+  //     SetTweet([addPost, ...tweets])
+  //   }
+  //   setPost("")
+  // }
+
+  //AVEC REACT HOOK FORM
+
+  const onSubmit = (data) => {
+    // console.log(data);
+    // alert(data.TweetText)
     let addPost;
     addPost = {
-      id : new Date().getTime(),
+      id: new Date().getTime(),
       imageAvatar: "./src/images/profile-photo.png",
       linkAvatar: "./src/images/profile-photo.png",
       TweetTitle: "Bradley Ortiz",
       TweetTitleText: "@bradley",
       TweetLogo: "./src/icons/Verified.png",
-      TweetText: post,
+      TweetText: data.TweetText,
       FirstTweetIcon: "src/icons/Reply.svg",
       TextOfTheFirstIcon: 0,
       SecondTweetIcon: "src/icons/Retweet.svg",
@@ -29,11 +75,9 @@ function TweetEditor() {
       TextOfTheThirdIcon: 0,
       FourthTweetIcon: "src/icons/Share.svg"
     }
-    
-    if(post.length != 0){
-      SetTweet([addPost, ...tweets])
-    }
-    setPost("")
+
+    SetTweet([addPost, ...tweets])
+    setValue('TweetText', " ")
   }
 
   //affichage
@@ -41,7 +85,15 @@ function TweetEditor() {
     <div className="tweet-editor">
       <Link to="/profile"><ProfilPicture src="./src/images/profile-photo.png"></ProfilPicture></Link>
       <div className="tweet-editor-form">
-        <input className="tweet-editor-input" placeholder="what's happening?" value={post} onChange={handleChange} />
+        <input className="tweet-editor-input" placeholder="what's happening?" name='TweetText' {...register("TweetText", {
+          minLength : 3,
+          message : "minimum 3 caractères"
+        })} />
+        {errors.TweetText && (
+          <span style={{ color: "red" }}>
+            {errors.TweetText.message}
+          </span>
+        )}
         <div className="tweet-editor-buttons">
           <div className="tweet-editor-actions">
             <img src="src/icons/Gif.png" />
@@ -50,8 +102,8 @@ function TweetEditor() {
             <img src="src/icons/Group.png" />
             <img src="src/icons/Schedule.png" />
           </div>
-          <form action="submit" onSubmit={handleSubmit}>
-            <button className="buttons">Tweet</button>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <button className="buttons" type='submit'>Tweet</button>
           </form>
         </div>
       </div>
