@@ -9,7 +9,7 @@ function Home() {
   return (
     <>
       <main className='left-sidebar'>
-        {/* <Sidebar /> */}
+        <Sidebar />
       </main>
       <main className="timeline">
         <Header />
@@ -17,7 +17,7 @@ function Home() {
         <Tweets/>
       </main>
       <main className="right-sidebar">
-        {/* <Trends /> */}
+        <Trends />
       </main>
     </>
   );
