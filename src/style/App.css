@@ -545,7 +545,7 @@ body{
 
 /* tweet-actions thirdContainer */
 
-.thirdContainer:hover{
+/* .thirdContainer:hover{
     color: rgb(255,0,0);
     fill: rgb(255,0,0);
     filter: drop-shadow(0 0 100px rgb(255,0,0)) drop-shadow(0 0 20px rgb(255,0,0))
@@ -557,7 +557,7 @@ body{
     gap: 20px;
     font-size: .9rem;
     align-items: center;
-}
+} */
 
 
 /* tweet-actions fourthContainer */
@@ -640,4 +640,42 @@ body{
 .biographie{
     padding: 0rem 2rem 1.5rem 2rem;
     margin-top: -3rem;
+}
+
+/* Like Button */
+
+.heart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart-icon {
+    height: 50px;
+    width: 100px;
+    background: url(../images/heart.png);
+    background-position: left;
+    cursor: pointer;
+    position: absolute;
+}
+
+.heart-bg {
+    border-radius: 50%;
+    height: 60px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.heart-icon.liked {
+    animation: heart-burst 0.7s steps(28) forwards;
+}
+
+
+@keyframes heart-burst {
+    to {
+        background-position: right;
+    }
 }

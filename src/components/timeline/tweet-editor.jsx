@@ -3,6 +3,7 @@ import ProfilPicture from '../profilPicture';
 import { Link } from 'react-router-dom';
 import UserContext from '../context/UserContext';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
 function TweetEditor() {
 
@@ -12,7 +13,7 @@ function TweetEditor() {
   // const handleChange = (e) => {
   //   setPost(e.target.value)
   // }
-  const { tweets, SetTweet } = useContext(UserContext)
+  // const { tweets, SetTweet } = useContext(UserContext)
 
   //////////////////////////////////
 
@@ -55,28 +56,35 @@ function TweetEditor() {
 
   //AVEC REACT HOOK FORM
 
-  const onSubmit = (data) => {
+  const onSubmit = async (users) => {
     // console.log(data);
     // alert(data.TweetText)
-    let addPost;
-    addPost = {
-      id: new Date().getTime(),
-      imageAvatar: "./src/images/profile-photo.png",
-      linkAvatar: "./src/images/profile-photo.png",
-      TweetTitle: "Bradley Ortiz",
-      TweetTitleText: "@bradley",
-      TweetLogo: "./src/icons/Verified.png",
-      TweetText: data.TweetText,
-      FirstTweetIcon: "src/icons/Reply.svg",
-      TextOfTheFirstIcon: 0,
-      SecondTweetIcon: "src/icons/Retweet.svg",
-      TextOfTheSecondIcon: 0,
-      ThirdTweetIcon: "src/icons/React.svg",
-      TextOfTheThirdIcon: 0,
-      FourthTweetIcon: "src/icons/Share.svg"
+    // let addPost;
+    // addPost = {
+    //   id: new Date().getTime(),
+    //   imageAvatar: "./src/images/profile-photo.png",
+    //   linkAvatar: "./src/images/profile-photo.png",
+    //   TweetTitle: "Bradley Ortiz",
+    //   TweetTitleText: "@bradley",
+    //   TweetLogo: "./src/icons/Verified.png",
+    //   TweetText: data.TweetText,
+    //   FirstTweetIcon: "src/icons/Reply.svg",
+    //   TextOfTheFirstIcon: 0,
+    //   SecondTweetIcon: "src/icons/Retweet.svg",
+    //   TextOfTheSecondIcon: 0,
+    //   ThirdTweetIcon: "src/icons/React.svg",
+    //   TextOfTheThirdIcon: 0,
+    //   FourthTweetIcon: "src/icons/Share.svg"
+    // }
+
+    try {
+      const response = await axios.post('https://65d51b503f1ab8c634368e76.mockapi.io/api/1/users', users);
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
     }
 
-    SetTweet([addPost, ...tweets])
+    // SetTweet([addPost, ...tweets])
     setValue('TweetText', " ")
   }
 

@@ -12,7 +12,7 @@ const Post = ({ post }) => {
             </div>
             <div className="tweet-body">
                 <div className="tweet-title">
-                    {post.TweetTitle} <img src={post.TweetLogo} alt="" />
+                    {post.TweetTitle} <img src="./src/icons/Verified.png" alt="" />
                     <div className="tweet-title-details">
                         <span>{post.TweetTitleText}</span>
                     </div>
@@ -26,17 +26,17 @@ const Post = ({ post }) => {
                 <div className="tweet-content">
                     <div className="tweet-actions-post">
                         <div className="container firstContainer">
-                            <CommentAndUncomment post={post}/>
+                            {/* <CommentAndUncomment post={post}/> */}
                         </div>
                         <div className="container secondContainer">
-                            <PostAndDeposter post={post}/>
+                            {/* <PostAndDeposter post={post}/> */}
                         </div>
                         <div className="container thirdContainer">
-                            <LikeAndDislike post={post}/>
+                            <LikeAndDislike/>
                         </div>
                         <div className="container fourthContainer">
-                            <img src={post.FourthTweetIcon} alt="" className="icon" />
-                            <span></span>
+                            {/* <img src={post.FourthTweetIcon} alt="" className="icon" />
+                            <span></span> */}
                         </div>
                     </div>
                 </div>
