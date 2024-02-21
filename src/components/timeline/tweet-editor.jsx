@@ -19,6 +19,10 @@ function TweetEditor() {
 
   const [formData, setFormData] = useState({
     TweetText: "",
+    imageAvatar : "./src/images/profile-photo.png",
+    linkAvatar: "./src/images/profile-photo.png",
+    TweetTitle: "Bradley Ortiz",
+    TweetTitleText: "@bradley",
   })
 
   const {

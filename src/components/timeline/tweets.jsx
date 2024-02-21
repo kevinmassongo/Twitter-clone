@@ -12,14 +12,14 @@ function Tweets() {
   useEffect(() => {
     axios.get('https://65d51b503f1ab8c634368e76.mockapi.io/api/1/users')
       .then(response => {
-        setPosts(response.data);
+        setPosts(response.data.reverse());
         // console.log(response.data);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
       });
   }, []);
-  console.log(posts);
+  // const Data = posts.reverse()
   return (
     <div className="tweets">
       {
