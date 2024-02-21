@@ -1,6 +1,6 @@
-import LikeAndDislike from "./LikeAndDislike/like&dislike";
-import CommentAndUncomment from "./LikeAndDislike/comment&uncomment";
-import PostAndDeposter from "./LikeAndDislike/post&deposter";
+import LikeAndDislike from "./animations/like&dislike";
+// import CommentAndUncomment from "./animations/comment&uncomment";
+// import PostAndDeposter from "./animations/post&deposter";
 import { Link } from "react-router-dom";
 
 const Post = ({ post }) => {
