@@ -1,14 +1,15 @@
 import LikeAndDislike from "./animations/like&dislike";
-// import CommentAndUncomment from "./animations/comment&uncomment";
-// import PostAndDeposter from "./animations/post&deposter";
+import CommentAndUncomment from "./animations/comment&uncomment";
+import PostAndDeposter from "./animations/post&reposter";
 import { Link } from "react-router-dom";
+import SaveAndDesave from "./animations/save&desave";
 
 const Post = ({ post }) => {
 
     return (
         <>
             <div className="tweet-avatar">
-                <Link to={post.linkAvatar}><img src={post.imageAvatar}/></Link>
+                <Link to="/profile"><img src={post.imageAvatar}/></Link>
             </div>
             <div className="tweet-body">
                 <div className="tweet-title">
@@ -26,17 +27,16 @@ const Post = ({ post }) => {
                 <div className="tweet-content">
                     <div className="tweet-actions-post">
                         <div className="container firstContainer">
-                            {/* <CommentAndUncomment post={post}/> */}
+                            <CommentAndUncomment />
                         </div>
                         <div className="container secondContainer">
-                            {/* <PostAndDeposter post={post}/> */}
+                            <PostAndDeposter/>
                         </div>
-                        <div className="container thirdContainer">
+                        <div className="contentOfLike thirdContainer">
                             <LikeAndDislike/>
                         </div>
                         <div className="container fourthContainer">
-                            {/* <img src={post.FourthTweetIcon} alt="" className="icon" />
-                            <span></span> */}
+                            <SaveAndDesave/>
                         </div>
                     </div>
                 </div>

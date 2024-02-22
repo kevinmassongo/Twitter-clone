@@ -507,9 +507,19 @@ body{
     width: 100%;
 }
 
-.tweet-actions-post .container{
+.box-like{
     display: flex;
     color: #2F3336;
+    gap: 20px;
+}
+
+.box-like:hover {
+    color: red;
+}
+
+.tweet-actions-post .contentOfLike:hover{
+    filter: drop-shadow(0 0 100px rgb(255,0,0)) drop-shadow(0 0 20px rgb(255,0,0))
+    drop-shadow(0 0 100px rgb(255,0,0)); 
 }
 
 /* tweet-actions firstContainer */
@@ -545,11 +555,10 @@ body{
 
 /* tweet-actions thirdContainer */
 
-/* .thirdContainer:hover{
+.thirdContainer:hover{
     color: rgb(255,0,0);
     fill: rgb(255,0,0);
-    filter: drop-shadow(0 0 100px rgb(255,0,0)) drop-shadow(0 0 20px rgb(255,0,0))
-    drop-shadow(0 0 100px rgb(255,0,0)); 
+    filter: drop-shadow(0 0 1px rgb(255,0,0));
     cursor: pointer;
 }
 
@@ -557,7 +566,7 @@ body{
     gap: 20px;
     font-size: .9rem;
     align-items: center;
-} */
+}
 
 
 /* tweet-actions fourthContainer */

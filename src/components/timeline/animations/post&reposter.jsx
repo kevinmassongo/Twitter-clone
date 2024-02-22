@@ -1,8 +1,8 @@
 import { useState } from "react"
 
-function PostAndDeposter({ post }) {
+function PostAndDeposter() {
 
-    const [like, setLike] = useState(post.TextOfTheSecondIcon),
+    const [like, setLike] = useState(0),
         [isLike, setIsLike] = useState(false)
 
     const handleClick = () => {
@@ -11,7 +11,7 @@ function PostAndDeposter({ post }) {
     }
     return (
         <>
-            <img src={post.SecondTweetIcon} alt="" className="icon" onClick={handleClick}/>
+            <img src="src/icons/Retweet.svg" alt="" className="icon" onClick={handleClick}/>
             <span className="textIcon">{like}</span>
         </>
     )

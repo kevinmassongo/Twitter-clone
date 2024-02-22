@@ -1,8 +1,8 @@
 import { useState } from "react"
 
-function CommentAndUncomment({ post }) {
+function CommentAndUncomment() {
 
-    const [like, setLike] = useState(post.TextOfTheFirstIcon),
+    const [like, setLike] = useState(0),
         [isLike, setIsLike] = useState(false)
 
     const handleClick = () => {
@@ -11,7 +11,7 @@ function CommentAndUncomment({ post }) {
     }
     return (
         <>
-            <img src={post.FirstTweetIcon} alt="" className="icon" onClick={handleClick} />
+            <img src="src/icons/Reply.svg" alt="" className="icon" onClick={handleClick} />
             <span className="textIcon">{like}</span>
         </>
     )

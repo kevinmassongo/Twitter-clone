@@ -1,19 +1,23 @@
 import { useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 function LikeAndDislike() {
 
-    const [likes, setLikes] = useState(99),
-        [isLike, setIsLike] = useState(false)
+    const [like, setLike] = useState(99),
+        [isLiked, setIsLike] = useState(false)
 
     const handleClick = () => {
-        setLikes(likes + (isLike ? -1 : 1))
-        setIsLike(!isLike)
+        setLike(like + (isLiked ? -1 : 1))
+        setIsLike(!isLiked)
     }
 
     return (
         <>
-            <img src="src/icons/React.svg" alt="" className="icon" onClick={handleClick} />
-            <span className="textIcon">{likes}</span>
+            <div className="box-like">
+                <FontAwesomeIcon icon={faHeart} style={{ color: isLiked ? 'red' : 'black', filter: isLiked ? '' : 'drop-shadow(0 0 1px rgb(47,51,54))', fontSize: '25px' }} onClick={handleClick} onMouseOver={(e) => e.target.style.filter = 'drop-shadow(0 0 1px rgb(255,0,0))'} onMouseOut={(e) => e.target.style.filter = 'drop-shadow(0 0 1px rgb(47,51,54))'} />
+                <span className="textIcon">{like}</span>
+            </div>
         </>
     )
 }
