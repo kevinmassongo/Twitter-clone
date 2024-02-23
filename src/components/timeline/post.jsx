@@ -26,16 +26,16 @@ const Post = ({ post }) => {
                 </div>
                 <div className="tweet-content">
                     <div className="tweet-actions-post">
-                        <div className="container firstContainer">
+                        <div className="contentOfReply">
                             <CommentAndUncomment />
                         </div>
-                        <div className="container secondContainer">
+                        <div className="contentOfRepost">
                             <PostAndDeposter/>
                         </div>
-                        <div className="contentOfLike thirdContainer">
+                        <div className="contentOfLike">
                             <LikeAndDislike/>
                         </div>
-                        <div className="container fourthContainer">
+                        <div className="container">
                             <SaveAndDesave/>
                         </div>
                     </div>

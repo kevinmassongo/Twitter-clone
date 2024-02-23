@@ -507,6 +507,53 @@ body{
     width: 100%;
 }
 
+/* tweet-actions firstContainer */
+/* .firstContainer:hover{
+    color: rgb(30,144,255);;
+    fill: rgb(30,144,255);
+    filter: drop-shadow(0 0 100px rgb(30,144,255)) drop-shadow(0 0 20px rgb(30,144,255))
+    drop-shadow(0 0 100px rgb(30,144,255)); 
+    cursor: pointer;
+}
+
+.firstContainer{
+    gap: 20px;
+    font-size: .9rem;
+    align-items: center;
+} */
+
+.box-reply{
+    display: flex;
+    color: #2F3336;
+    gap: 20px;
+}
+
+.box-reply:hover {
+    color: rgb(30,144,255);
+}
+
+.tweet-actions-post .contentOfReply:hover{
+    filter: drop-shadow(0 0 100px rgb(30,144,255))
+}
+
+/* tweet-actions secondContainer */
+
+.box-repost{
+    display: flex;
+    color: #2F3336;
+    gap: 20px;
+}
+
+.box-repost:hover {
+    color: rgb(60,179,113);
+}
+
+.tweet-actions-post .contentOfRepost:hover{
+    filter: drop-shadow(0 0 100px rgb(60,179,113))
+}
+
+
+/* tweet-actions thirdContainer */
 .box-like{
     display: flex;
     color: #2F3336;
@@ -522,40 +569,7 @@ body{
     drop-shadow(0 0 100px rgb(255,0,0)); 
 }
 
-/* tweet-actions firstContainer */
-.firstContainer:hover{
-    color: rgb(30,144,255);;
-    fill: rgb(30,144,255);
-    filter: drop-shadow(0 0 100px rgb(30,144,255)) drop-shadow(0 0 20px rgb(30,144,255))
-    drop-shadow(0 0 100px rgb(30,144,255)); 
-    cursor: pointer;
-}
-
-.firstContainer{
-    gap: 20px;
-    font-size: .9rem;
-    align-items: center;
-}
-
-/* tweet-actions secondContainer */
-.secondContainer:hover{
-    color: rgb(60,179,113);
-    fill: rgb(60,179,113);
-    filter: drop-shadow(0 0 100px rgb(60,179,113)) drop-shadow(0 0 20px rgb(60,179,113))
-    drop-shadow(0 0 100px rgb(60,179,113)); 
-    cursor: pointer;
-}
-
-.secondContainer{
-    gap: 20px;
-    font-size: .9rem;
-    align-items: center;
-}
-
-
-/* tweet-actions thirdContainer */
-
-.thirdContainer:hover{
+/* .thirdContainer:hover{
     color: rgb(255,0,0);
     fill: rgb(255,0,0);
     filter: drop-shadow(0 0 1px rgb(255,0,0));
@@ -566,7 +580,7 @@ body{
     gap: 20px;
     font-size: .9rem;
     align-items: center;
-}
+} */
 
 
 /* tweet-actions fourthContainer */
