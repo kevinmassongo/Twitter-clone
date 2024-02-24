@@ -9,15 +9,15 @@ function Home() {
   return (
     <>
       <main className='left-sidebar'>
-        {/* <Sidebar /> */}
+        <Sidebar />
       </main>
       <main className="timeline">
         <Header />
-        <TweetEditor/>
-        <Tweets/>
+        <TweetEditor />
+        <Tweets />
       </main>
       <main className="right-sidebar">
-        {/* <Trends /> */}
+        <Trends />
       </main>
     </>
   );

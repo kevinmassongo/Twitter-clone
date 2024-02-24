@@ -8,15 +8,15 @@ function Layout() {
 
     return (
         <>
-            <div className="right-sidebar">
+            {/* <div className="right-sidebar">
                 <Sidebar></Sidebar>
-            </div>
-            <div>
+            </div> */}
+            {/* <div> */}
                 <Outlet></Outlet>
-            </div>
-            <div className="left-sidebar">
+            {/* </div> */}
+            {/* <div className="left-sidebar">
                 <Trends></Trends>
-            </div>
+            </div> */}
         </>
     );
 }
