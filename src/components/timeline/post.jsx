@@ -35,7 +35,7 @@ const Post = ({ post }) => {
                         <div className="contentOfLike">
                             <LikeAndDislike/>
                         </div>
-                        <div className="container">
+                        <div className="contentOfSave">
                             <SaveAndDesave/>
                         </div>
                     </div>

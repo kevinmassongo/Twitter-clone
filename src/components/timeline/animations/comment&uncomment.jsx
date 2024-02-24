@@ -1,10 +1,10 @@
-import { faComment, faCommentAlt, faCommentDollar, faCommentDots, faCommentSlash, faCommentSms, faComments} from "@fortawesome/free-solid-svg-icons"
+import { faComment } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react"
 
 function CommentAndUncomment() {
 
-    const [reply, setReply] = useState(99),
+    const [reply, setReply] = useState(7),
         [isReply, setIsReply] = useState(false)
 
     const handleClick = () => {
@@ -14,7 +14,9 @@ function CommentAndUncomment() {
     return (
         <>
             <div className="box-reply">
-                <FontAwesomeIcon icon={faComment} style={{ color: isReply ? 'rgb(30,144,255)' : '', filter: isReply ? '' : 'drop-shadow(0 0 1px rgb(47,51,54))', fontSize: '25px' }} onClick={handleClick} onMouseOver={(e) => e.target.style.filter = 'rgb(30,144,255)'} onMouseOut={(e) => e.target.style.filter = 'drop-shadow(0 0 1px rgb(47,51,54))'} />
+                <div className="reply">
+                    <FontAwesomeIcon icon={faComment} style={{ color: isReply ? 'rgb(30,144,255)' : '', filter: isReply ? '' : 'drop-shadow(0 0 1px rgb(47,51,54))', fontSize: '25px' }} onClick={handleClick} onMouseOver={(e) => e.target.style.filter = 'rgb(30,144,255)'} onMouseOut={(e) => e.target.style.filter = 'drop-shadow(0 0 1px rgb(47,51,54))'} />
+                </div>
                 <span className="textIcon">{reply}</span>
             </div>
         </>
