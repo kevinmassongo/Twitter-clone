@@ -4,11 +4,7 @@
 @tailwind utilities;
 
 body{
-    background-color: black;
-    color: white;
-    margin: 0 auto;
-    max-width: 1800px;
-    /* overflow-x: hidden; */
+    @apply bg-body-custom-black text-body-custom-white m-auto max-w-body-custom-maxWidth
 }
 
 #root{
@@ -18,11 +14,7 @@ body{
 }
 
 .timeline {
-    flex: 0 0 800px;
-    font-family: 'Inter', sans-serif;
-    border-left: 1px solid #2F3336;
-    border-right: 1px solid #2F3336;
-    max-width: 800px;
+    @apply flex-timeline-custom-flex max-w-timeline-custom-maxWidth font-timeline-custom-fontFamily border-x-timeline-custom-borderWidth border-timeline-custom-borderColor
 }
 
 .header {
@@ -122,15 +114,7 @@ body{
     max-height: 100px;
     border-radius: 100%;
 }
-.tweet-content{
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 30px;
-    width: 100%; */
-    /* max-width: 800px; */
-}
+
 .tweet-body{
     display: flex;
     flex-direction: column;
@@ -264,7 +248,7 @@ body{
 /* Sidebar */
 
 .left-sidebar{
-    position: relative;
+    @apply relative;
 }
 
 .sidebar{

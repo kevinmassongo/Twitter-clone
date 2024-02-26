@@ -14,7 +14,7 @@ function Home() {
       <main className="timeline">
         <Header />
         <TweetEditor />
-        <Tweets />
+        <Tweets /> 
       </main>
       <main className="right-sidebar">
         <Trends />
