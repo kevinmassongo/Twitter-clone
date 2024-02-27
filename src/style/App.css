@@ -14,25 +14,26 @@ body{
 }
 
 .timeline {
-    @apply flex-timeline-custom-flex max-w-timeline-custom-maxWidth font-timeline-custom-fontFamily border-x-timeline-custom-borderWidth border-timeline-custom-borderColor
+    @apply flex-timeline-custom-flex max-w-timeline-custom-maxWidth font-timeline-custom-fontFamily border-x-custom-borderWidth border-custom-borderColor
 }
 
 .header {
-    padding: 1.5rem 1rem;
+    /* padding: 1.5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #2F3336;
+    border-bottom: 1px solid #2F3336; */
+    @apply p-header-custom-padding flex items-center justify-between border-b-custom-borderWidth border-custom-borderColor
 }
 
 .top-tweets {
-    width: 1.5rem;
-    height: auto;
+    /* width: 1.5rem;
+    height: auto; */
+    @apply w-6 h-auto
 }
 
 .page-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+    @apply font-bold text-2xl
 }
 
 .tweet-editor {
@@ -628,18 +629,21 @@ body{
 }
 
 .header-profile {
-    display: flex;
+    /* display: flex;
     padding: .5rem 1.5rem;
     border-bottom: 1px solid #2F3336;
-    gap: 40px;
+    gap: 40px; */
+    @apply flex gap-10 p-headerProfil-custom-padding border-b-custom-borderWidth border-custom-borderColor
 }
 
 .header-profile .container{
-    align-items: center;
+    /* align-items: center; */
+    @apply items-center
 }
 
 .arrow-left{
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    @apply text-custom-fontSize
 }
 
 /* 2. Tweet-edit-profile */
@@ -672,8 +676,9 @@ body{
 }
 
 .name-profile {
-    font-size: 1.5rem;
-    font-weight: bold;
+    /* font-size: 1.5rem;
+    font-weight: bold; */
+    @apply font-bold text-2xl
 }
 
 .name {

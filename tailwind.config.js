@@ -10,10 +10,10 @@ export default {
         'timeline-custom-fontFamily' : 'Inter'
       },
       borderWidth : {
-        'timeline-custom-borderWidth' : '1px'
+        'custom-borderWidth' : '1px',
       },
       borderColor : {
-        'timeline-custom-borderColor' : '#2F3336'
+        'custom-borderColor' : '#2F3336',
       },
       maxWidth : {
         'timeline-custom-maxWidth' : '800px',
@@ -25,15 +25,20 @@ export default {
       colors : {
         'body-custom-white' : '#FFF'
       },
+      padding : {
+        'header-custom-padding' : '1.5rem 1rem',
+        'headerProfil-custom-padding' : '.5rem 1.5rem'
+      },
+      alignItems : {
+        'header-custom-alignItems' : 'center'
+      },
+      justifyContent : {
+        'header-custom-justifyContent' : 'space-between'
+      },
+      fontSize : {
+        'custom-fontSize' : '2rem'
+      }
     },
   },
   plugins: [],
 }
-
-// .timeline {
-//   flex: 0 0 800px;
-//   font-family: 'Inter', sans-serif;
-//   border-left: 1px solid #2F3336;
-//   border-right: 1px solid #2F3336;
-//   max-width: 800px;
-// }
