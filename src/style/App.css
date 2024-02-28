@@ -493,38 +493,43 @@ body{
 /* Tweet Action */
 
 .tweet-actions-post {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    width: 100%;
+    width: 100%; */
+    @apply grid grid-cols-4 w-full
 }
 
 /* tweet-actions firstContainer */
 
-.box-reply{
-    display: flex;
+.box-reply, .box-repost, .box-like{
+    /* display: flex;
     color: #2F3336;
     gap: 10px;
     align-items: center;
-    cursor: pointer;
+    cursor: pointer; */
+    @apply flex text-custom-color-1 gap-2.5 items-center cursor-pointer
 }
 
 .box-reply:hover {
-    color: rgb(30,144,255);
+    /* color: rgb(30,144,255); */
+    @apply hover:text-custom-color-3
 }
 
-.reply {
-    background-color: transparent ;
+.reply, .repost, .like, .box-save {
+    /* background-color: transparent ;
     height: 40px;
     width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 50%; */
+    @apply flex items-center justify-center rounded-full w-10 h-10 bg-transparent
 }
 
-.reply:hover{
-    background-color: rgba(30, 143, 255, 0.235);
+.reply{
+    /* background-color: rgba(30, 143, 255, 0.235); */
+    @apply hover:bg-custom-backgroundColor-3
 }
 
 .tweet-actions-post .contentOfReply:hover{
@@ -533,30 +538,15 @@ body{
 
 /* tweet-actions secondContainer */
 
+
 .box-repost{
-    display: flex;
-    color: #2F3336;
-    gap: 10px;
-    align-items: center;
-    cursor: pointer;
+    /* color: rgb(60,179,113); */
+    @apply hover:text-custom-color-4
 }
 
-.box-repost:hover {
-    color: rgb(60,179,113);
-}
-
-.repost {
-    background-color: transparent ;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.repost:hover{
-    background-color: rgba(60, 179, 114, 0.235);
+.repost{
+    /* background-color: rgba(60, 179, 114, 0.235); */
+    @apply hover:bg-custom-backgroundColor-4
 }
 
 .tweet-actions-post .contentOfRepost:hover{
@@ -565,40 +555,24 @@ body{
 
 
 /* tweet-actions thirdContainer */
-.box-like{
-    display: flex;
-    color: #2F3336;
-    gap: 10px;
-    align-items: center;
-    cursor: pointer;
-}
 
-.box-like:hover {
-    color: red;
+
+.box-like{
+    @apply hover:text-custom-color-5;
 }
 
 .tweet-actions-post .contentOfLike:hover{
     filter: drop-shadow(0 0 100px rgb(255,0,0))  
 }
 
-.like {
-    background-color: transparent ;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.like:hover{
-    background-color: rgba(255, 0, 0, 0.235);
+.like{
+    /* background-color: rgba(255, 0, 0, 0.235); */
+    @apply hover:bg-custom-backgroundColor-5
 }
 
 /* tweet-actions fourthContainer */
 
-.box-save {
+/* .box-save {
     background-color: transparent;
     height: 40px;
     width: 40px;
@@ -607,10 +581,10 @@ body{
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
-}
+} */
 
-.box-save:hover{
-    background-color: rgba(30, 143, 255, 0.335);
+.box-save{
+    @apply hover:bg-custom-backgroundColor-6
 }
 
 /* .contentOfSave:hover {
@@ -624,11 +598,12 @@ body{
 /* 1. Header */
 
 .timeline-profile {
-    flex: 0 0 800px;
+    /* flex: 0 0 800px;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
-    max-width: 800px;
+    max-width: 800px; */
+    @apply flex-timeline-custom-1 max-w-timeline-custom-maxWidth font-timeline-custom-fontFamily border-x-custom-borderWidth border-custom-borderColor
 }
 
 .header-profile {
@@ -701,40 +676,3 @@ body{
     @apply p-tweetEditorProfileBiographie-custom-padding relative bottom-16
 }
 
-/* Like Button */
-
-.heart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.heart-icon {
-    height: 50px;
-    width: 100px;
-    background: url(../images/heart.png);
-    background-position: left;
-    cursor: pointer;
-    position: absolute;
-}
-
-.heart-bg {
-    border-radius: 50%;
-    height: 60px;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.heart-icon.liked {
-    animation: heart-burst 0.7s steps(28) forwards;
-}
-
-
-@keyframes heart-burst {
-    to {
-        background-position: right;
-    }
-}

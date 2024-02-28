@@ -26,11 +26,18 @@ export default {
       backgroundColor : {
         'custom-backgroundColor-1' : '#000',
         'custom-backgroundColor-2' : '#6E767D',
+        'custom-backgroundColor-3' : 'rgba(30, 143, 255, 0.235)',
+        'custom-backgroundColor-4' : 'rgba(60, 179, 114, 0.235)',
+        'custom-backgroundColor-5' : 'rgba(255, 0, 0, 0.235)',
+        'custom-backgroundColor-6' : 'rgba(30, 143, 255, 0.335)',
       },
       colors : {
         'body-custom-white' : '#FFF',
         'custom-color-1' : '#6E767D',
         'custom-color-2' : '#D9D9D9',
+        'custom-color-3' : 'rgb(30,144,255)',
+        'custom-color-4' : 'rgb(60,179,113)',
+        'custom-color-5' : 'red',
       },
       padding : {
         'header-custom-padding' : '1.5rem 1rem',
@@ -50,6 +57,9 @@ export default {
       height : {
         'custom-height' : '200px'
       },
+      filter : {
+        'custom-1' : '(0 0 100px rgb(30,144,255))'
+      }
     },
   },
   plugins: [],
