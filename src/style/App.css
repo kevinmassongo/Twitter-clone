@@ -17,7 +17,7 @@ body{
     @apply flex-timeline-custom-1 max-w-timeline-custom-maxWidth font-custom-fontFamily border-x-custom-borderWidth border-custom-borderColor
 }
 
-.header {
+.header{
     /* padding: 1.5rem 1rem;
     display: flex;
     align-items: center;
