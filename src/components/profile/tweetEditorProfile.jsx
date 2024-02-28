@@ -8,7 +8,7 @@ function TweetEditorProfile() {
             <div className="tweet-editor-profile-container">
                 <div className="empty-container"></div>
                 <div className="container">
-                    <div className="profile-picture">
+                    <div>
                         <ProfilPicture src="./src/images/profile-photo.png"></ProfilPicture>
                         <div className="box">
                             <Paragraph style="name">Bradley Ortiz</Paragraph>
