@@ -93,21 +93,25 @@ body{
     @apply flex items-center justify-start gap-1
 }
 .tweet-editor-actions button {
-    background-color: transparent;
-    border: none;
+    /* background-color: transparent;
+    border: none; */
+    @apply bg-transparent border-none
 }
 .button {
-    text-transform: capitalize;
+    /* text-transform: capitalize;
     padding: .7rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1rem; */
+    @apply text-base capitalize p-custom-padding-7
 }
 .tweet{
-    display: flex;
+    /* display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 20px;
     padding: 1.5rem 1rem;
-    border-bottom: 1px solid #2F3336;
+    border-bottom: 1px solid #2F3336; */
+    @apply flex items-start justify-start gap-5 p-custom-padding-1 border-custom-borderColor border-custom-borderWidth
+
 }
 
 .tweet-avatar {

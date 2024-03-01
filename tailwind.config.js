@@ -52,7 +52,8 @@ export default {
         'custom-padding-3' : '1.5rem 2rem 0 2rem',
         'custom-padding-4' : '0 2rem 1.5rem 2rem',
         'custom-padding-5' : '10px 40px',
-        'custom-padding-6' : '.3rem 1rem'
+        'custom-padding-6' : '.3rem 1rem',
+        'custom-padding-7' : '0.7rem 1.5rem'
       },
       alignItems : {
         'header-custom-alignItems' : 'center'
