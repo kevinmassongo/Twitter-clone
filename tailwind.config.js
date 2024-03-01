@@ -52,6 +52,7 @@ export default {
         'custom-padding-3' : '1.5rem 2rem 0 2rem',
         'custom-padding-4' : '0 2rem 1.5rem 2rem',
         'custom-padding-5' : '10px 40px',
+        'custom-padding-6' : '.3rem 1rem'
       },
       alignItems : {
         'header-custom-alignItems' : 'center'
@@ -63,6 +64,7 @@ export default {
         'custom-fontSize-1' : '2rem',
         'custom-fontSize-2' : '0.9rem',
         'custom-fontSize-3' : '0.7rem',
+        'custom-fontSize-4' : '1.3rem'
       },
       height : {
         'custom-height' : '200px'
@@ -74,6 +76,7 @@ export default {
         'custom-margin-1' : '-25px 0 0 10px',
         'custom-margin-2' : '10px 0px',
         'custom-margin-3' : '20px 10px',
+        'custom-margin-4' : '13px 0px'
       }
     },
   },
